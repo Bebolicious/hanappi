@@ -31,6 +31,8 @@ export default function FixedBottomNavigation({
           showLabels
           value={value}
           onChange={(event, newValue) => {
+            event.stopPropagation();
+            setValue(newValue);
             setTabIndex(newValue);
           }}
         >

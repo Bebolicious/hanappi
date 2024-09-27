@@ -2,7 +2,9 @@ import { Box, Typography } from "@mui/material";
 import HanappiAppBar from "./features/Appbar/Appbar";
 import "./index.css";
 import FixedBottomNavigation from "./features/BottomNavigation/BottomNavigation";
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import HanabiSheet from "./features/Hanabi/Hanabi";
+import { createClient } from "@supabase/supabase-js";
 
 function App() {
   const [currentTab, setCurrentTab] = useState(0);
@@ -14,7 +16,7 @@ function App() {
   const TabSelector = () => {
     switch (currentTab) {
       case 0:
-        return <Typography>Tab 1</Typography>;
+        return <HanabiSheet />;
       case 1:
         return <Typography>Tab 2</Typography>;
       case 2:
