@@ -10,6 +10,10 @@ interface Player {
   id: number;
 }
 
+console.log(process.env.VITE_SUPABASE_URL);
+console.log(process.env.VITE_SUPABASE_ANON_KEY);
+console.log(process.env);
+
 const supabase = createClient(
   process.env.VITE_SUPABASE_URL ? process.env.VITE_SUPABASE_URL : "",
   process.env.VITE_SUPABASE_ANON_KEY ? process.env.VITE_SUPABASE_ANON_KEY : ""
