@@ -10,6 +10,8 @@ interface Player {
   id: number;
 }
 
+console.log(import.meta.env.VITE_SUPABASE_URL);
+console.log(import.meta.env);
 console.log(process.env.VITE_SUPABASE_URL);
 console.log(process.env.VITE_SUPABASE_ANON_KEY);
 console.log(process.env);
