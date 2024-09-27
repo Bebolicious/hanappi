@@ -2,9 +2,8 @@ import { Box, Typography } from "@mui/material";
 import HanappiAppBar from "./features/Appbar/Appbar";
 import "./index.css";
 import FixedBottomNavigation from "./features/BottomNavigation/BottomNavigation";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import HanabiSheet from "./features/Hanabi/Hanabi";
-import { createClient } from "@supabase/supabase-js";
 
 function App() {
   const [currentTab, setCurrentTab] = useState(0);
