@@ -30,8 +30,6 @@ export default function PlayerHeader() {
     setAllPlayers(data);
   }
 
-  console.log(players);
-
   const open = Boolean(anchorEl);
   const handleClick = (event: React.MouseEvent<HTMLButtonElement>) => {
     setAnchorEl(event.currentTarget);
